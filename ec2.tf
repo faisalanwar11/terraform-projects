@@ -4,6 +4,7 @@
 # and serves a custom HTML page indicating Terraform provisioning success.
 # ---------------------------------------------------------------------------
 
+
 resource "aws_instance" "webserver" {
   # Use an Amazon Linux 2 AMI (HVM) in the desired region (change if needed)
   ami           = "ami-0b09627181c8d5778"
