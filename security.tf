@@ -4,6 +4,7 @@
 # and permits all outbound traffic from the EC2 instance to the internet.
 # ------------------------------------------------------------------------------
 
+
 resource "aws_security_group" "web_sg" {
   vpc_id      = aws_vpc.web_vpc.id
   name        = "web-sg"
