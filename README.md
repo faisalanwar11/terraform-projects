@@ -33,4 +33,4 @@ This project uses **Terraform** to provision a basic web server infrastructure o
 
 ## 📷 Screenshot
 
-![Terraform Web Page](https://github.com/faisalanwar11/terraform-projects/tree/a0b6ab33add43cc31a4a6a6d572912266cc35738/images)
+![Terraform Web Server](https://github.com/faisalanwar11/terraform-projects/blob/main/images/webpage.png?raw=true)
