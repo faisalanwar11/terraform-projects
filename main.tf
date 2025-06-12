@@ -3,6 +3,7 @@
 # Specifies the AWS provider and region for infrastructure deployment
 # ------------------------------------------------------------------------------
 
+
 terraform {
   required_providers {
     aws = {
