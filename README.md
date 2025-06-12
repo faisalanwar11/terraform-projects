@@ -30,3 +30,4 @@ This project uses **Terraform** to provision a basic web server infrastructure o
 ├── provider.tf          # AWS provider configuration
 ├── outputs.tf           # Useful output values (e.g., web URL)
 └── README.md            # Project documentation
+
