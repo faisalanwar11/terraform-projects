@@ -31,3 +31,6 @@ This project uses **Terraform** to provision a basic web server infrastructure o
 ├── outputs.tf           # Useful output values (e.g., web URL)
 └── README.md            # Project documentation
 
+## 📷 Screenshot
+
+![Terraform Web Page](images/webpage.png)
