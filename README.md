@@ -1,13 +1,32 @@
-# terraform-projects
-This repo is about my terraform aws projects
+# 🌐 Terraform AWS VPC + EC2 Web Server Deployment
 
+This project uses **Terraform** to provision a basic web server infrastructure on **AWS**, including a custom VPC, public subnet, routing, and an EC2 instance with Apache installed. A styled `index.html` page is served to verify successful deployment.
 
-This Project is about creating AWS Infrastructure to host a web application on EC2 using Terraform
+---
 
-1. Create a VPC
-2. Create an Internet Gateway
-3. Create a Route Table
-4. Create a Subnet
-5. Associate the Route Table with the Subnet
-6. Create a Security Group to allow port 22, 80, and 443
-7. Create a network interface with an IP in the subnet
+## 🧱 Infrastructure Components
+
+- **VPC** with CIDR `10.0.0.0/16`
+- **1 Public Subnet** (`10.0.1.0/24`) with internet access
+- **Internet Gateway** for public internet access
+- **Route Table** with route to IGW
+- **Security Group** allowing:
+  - Port 22 (SSH)
+  - Port 80 (HTTP)
+  - Port 443 (HTTPS)
+- **EC2 Instance** (Amazon Linux 2) with:
+  - Apache (httpd) installed and enabled
+  - Custom HTML page indicating successful Terraform provisioning
+
+---
+
+## 📁 Project Structure
+
+```
+.
+├── main.tf              # EC2 instance and Apache setup
+├── vpc.tf               # VPC, subnets, IGW, and route table
+├── security.tf          # Security group for EC2
+├── provider.tf          # AWS provider configuration
+├── outputs.tf           # Useful output values (e.g., web URL)
+└── README.md            # Project documentation
