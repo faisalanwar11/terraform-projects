@@ -7,6 +7,7 @@
 # ------------------------------------------------------------------------------
 # VPC
 # ------------------------------------------------------------------------------
+
 # Create a custom VPC with CIDR block 10.0.0.0/16 to host public and private subnets
 resource "aws_vpc" "web_vpc" {
   cidr_block = "10.0.0.0/16"
