@@ -22,14 +22,16 @@ This project uses **Terraform** to provision a basic web server infrastructure o
 
 ## 📁 Project Structure
 
+| File         | Description                             |
+|--------------|-----------------------------------------|
+| main.tf      | EC2 instance and Apache setup           |
+| vpc.tf       | VPC, subnets, IGW, and route table      |
+| security.tf  | Security group for EC2                  |
+| provider.tf  | AWS provider configuration              |
+| outputs.tf   | Useful output values (e.g., web URL)    |
+| README.md    | Project documentation                   |
 
-
-├── main.tf              # EC2 instance and Apache setup<br>
-├── vpc.tf               # VPC, subnets, IGW, and route table<br>
-├── security.tf          # Security group for EC2<br>
-├── provider.tf          # AWS provider configuration<br>
-├── outputs.tf           # Useful output values (e.g., web URL)<br>
-└── README.md            # Project documentation<br>
+---
 
 📷 Webpage Screenshot
 
